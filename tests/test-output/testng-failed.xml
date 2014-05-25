@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [empAndSpouseInfoComp]">
+  <test name="empAndSpouseInfoComp(failed)">
     <classes>
-      <class name="com.jiff.homepage.test.BeActiveTest">
+      <class name="com.jiff.homepage.test.EmployeeAndSpouseInfoComparisionTest">
         <methods>
           <include name="logout"/>
           <include name="login"/>
-          <include name="beActiveSyncTest"/>
+          <include name="employeeAndSpouswInfoComparisionTest"/>
         </methods>
-      </class> <!-- com.jiff.homepage.test.BeActiveTest -->
+      </class> <!-- com.jiff.homepage.test.EmployeeAndSpouseInfoComparisionTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- empAndSpouseInfoComp(failed) -->
+</suite> <!-- Failed suite [empAndSpouseInfoComp] -->

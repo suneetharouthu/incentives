@@ -83,6 +83,21 @@ public class IncentivesTestMethods {
 		}catch(Exception e){
 			System.err.println("getRegistrationPageTest: companyImage is not present");
 		}
+		//checks GetFreeGear is present or not
+		result=BasePage.isElementPresent(welcomePage.getFreeGear);
+		try{
+			Assert.assertEquals(result,true);
+		}catch(Exception e){
+			System.err.println("getRegistrationPageTest: getFreeGear is not present");
+		}
+		//checks SetAndAchieveGoals is present or not
+		result=BasePage.isElementPresent(welcomePage.setAndAchieveGoals);
+		try{
+			Assert.assertEquals(result,true);
+		}catch(Exception e){
+			System.err.println("getRegistrationPageTest: setAndAchieveGoals is not present");
+		}
+		
 		//checks initial getpaid
 		String[] intialActualEarnings=welcomePage.getPaid();
 		String[] initialexpectedEarnings=welcomePage.intialExpectedEarnings();

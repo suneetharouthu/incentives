@@ -6,7 +6,6 @@
       <class name="com.jiff.settingspage.test.SettingsPageTest">
         <methods>
           <include name="settingsPageUpdateNameTest"/>
-          <include name="settingsPageUpdatePasswordTest"/>
         </methods>
       </class> <!-- com.jiff.settingspage.test.SettingsPageTest -->
     </classes>

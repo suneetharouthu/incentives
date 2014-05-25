@@ -21,7 +21,7 @@ public class SettingsPageTest {
 	}
 	@Test
 	public void settingsPageUpdatePasswordTest(){
-		updatePasswordMethod("password2","password1");
+		updatePasswordMethod("password1","password2");
 		
 	}
 	/*
@@ -29,12 +29,12 @@ public class SettingsPageTest {
 	 * and verifies updates are successful or not
 	 */
 	public void updateNameMethod(String firstName,String lastName){
-		login.loginPage("url", "bayampuser2.2086+002@gmail.com", "password2");
+		login.loginPage("url", "bayampuser2.2086+002@gmail.com", "password1");
 		home.getSettingsPage();
 		String email=settings.getCurrentEmail();
 		settings.updateName(firstName,lastName);
 		home.logout();
-		login.loginPage("url", "bayampuser2.2086+002@gmail.com", "password2");
+		login.loginPage("url", "bayampuser2.2086+002@gmail.com", "password1");
 		home.getSettingsPage();
 		if(!firstName.equals(null)){
 		String actualFirstName=BasePage.driver.findElement(settings.settingsFirstName).getAttribute("value");
